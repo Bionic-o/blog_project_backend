@@ -1,0 +1,30 @@
+create table BoardGames (
+    id serial primary key,
+    title varchar(400),
+    author varchar(400),
+    image varchar(4000),
+    richText varchar(16000),
+    publisher varchar(400)
+)
+
+drop table BoardGames;
+
+INSERT into BoardGames (title, author, image, richText, publisher) values ('HARRY POTTER: HOUSE CUP CONTEST', 'Nate Heiss', 'https://images.ctfassets.net/zyzbzt6ky8e9/1xpjVR4EG1gBQLRwEhGEU0/491fa04dd395ab38c21d594f96fff98f/Harry.jpeg', 'Gryffindor™, Slytherin™, Ravenclaw™ or Hufflepuff™: which house will win this competition? At Hogwarts™ , the famous school of witchcraft and wizardry, the nerve-wracking competition for the house cup takes place.
+
+
+Anyone who knows the books and films about the famous magician knows that the battle for the house cup is fought out among the four houses over a whole school year. The tutors award points for special achievements or even deduct them if the house rules have been violated again.
+
+In this competition, students try to solve problems and learn lessons in order to earn house points corresponding to their house. These are paid out as colored gems and collected in a transparent hourglass. 
+
+The three school subjects taught are potions, defense against the dark arts and magic. The respective performance level of each student is marked with markers displayed in the common room, the actual player board. Each house takes part in the house cup competition with three students in the form of round tiles with a corresponding likeness. Well-known names like Hermione Granger, Luna Lovegood or Draco Malfoy are of course familiar to fans. The actual action is dealt with on a large game board, which shows three rooms with several fields, four location cards and two banners with task and lesson cards. Task cards and lessons are available in easy and hard versions. The location cards, of which only one is open at the beginning and others are only revealed in the course of the game, serve as additional fields on which students can get various bonuses.
+
+7 rounds - 2 phases
+
+The game is played in turn. InPhase 1 is taught. Each house always places one student on the game board. A student in the staff room can get mostly magic there, in the library he accumulates knowledge and in the classroom he improves his skills in the three school subjects. In all three rooms there is also the possibility to secure corresponding task and lesson cards.
+
+When all students have been deployed, they return to phase 2return to their houses and then have the opportunity to complete up to two tasks alone or together. The prerequisite for this is, of course, that the corresponding cards have been collected. Certain skills usually have to be acquired, but the surrender of magic and knowledge markers is often required. As a reward there are house points and other bonuses.
+
+After seven rounds the competition is over and the winner is determined. Now there are still points for reaching level 7 in the subjects and pairs of magic and knowledge markers. Each gem collected is worth 10 points and the house with the most points, seen on the highest gem column in the hourglass, is the winner.
+', 'cosmos');
+
+select * from BoardGames
